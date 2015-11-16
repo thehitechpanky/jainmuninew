@@ -1,14 +1,28 @@
 <?php
 //Define variables for head.php
-$title = 'Jain Muni Locator | About :: online destination for digambara jains';
+include 'config.php';
+if(isset($_GET['id'])) {
+	$id = (int)$_GET['id'];
+	$t = $db->prepare("SELECT * FROM temples WHERE tid = '$id'");
+	$t->execute();
+	if($t->rowCount() == 1) {
+		$row = $t->fetch(PDO::FETCH_ASSOC);
+		$titlename = $row['tname'];
+	} else {
+		$titlename = 'Digambara Jain Temples';
+	}
+} else {
+	$titlename = 'Digambara Jain Temples';
+}
+$title = $titlename.' | Jain Muni Locator';
 ?>
 
 <!DOCTYPE HTML>
 <html>
-<?php include 'head.php'; ?>
-<body>
+	<?php include 'head.php'; ?>
+	<body>
 		<!----start-container---->
-			<!----start-header---->
+		<!----start-header---->
 		<div id="home" class="">
 			<div class="container">
 				<!---- start-logo---->
@@ -17,11 +31,15 @@ $title = 'Jain Muni Locator | About :: online destination for digambara jains';
 				</div>
 				<!---- //End-logo---->
 				<!----start-top-nav---->
-				 <nav class="top-nav">
+				<nav class="top-nav">
 					<ul class="top-nav">
 						<li class=""><a href="/subdomains/jainmuninew" class="">Home</a></li>
+						<?php if ($titlename == 'Digambara Jain Temples') { ?>
 						<li class="active"><a href="#temples" class="scroll">Temples</a></li>
 						<li class="page-scroll"><a href="#more" class="scroll">More</a></li>
+						<?php } else { ?>
+						<li class="active"><a href="#temple" class="scroll">Temple</a></li>
+						<?php } ?>
 						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
 					</ul>
 					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
@@ -31,21 +49,23 @@ $title = 'Jain Muni Locator | About :: online destination for digambara jains';
 			</div>
 		</div>
 		<!----//End-header---->
-	<!----start-temples---->
-	<script type="text/javascript" src="temples/searchTemples.js"></script>
-	<div  id="temples" class="testmonials">
-		<div class="container">
-			<div class="head text-center">
-				<h3><span> </span> Digambara Jain Temples</h3>
-				<p>List of All Digambar Jain Temples is given Below. Click on the name to see more information</p><br />
-				<input id="searchTemples" name="searchBox" type="text" class="fullWidth contact" />
-				<div id="searchResults"></div>
+		<!----start-temples---->
+		<script type="text/javascript" src="temples/searchTemples.js"></script>
+		<div  id="temples" class="testmonials">
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span> <?php echo $titlename; ?></h3>
+					<?php if ($titlename == 'Digambara Jain Temples') { ?>
+					<p>List of All Digambar Jain Temples is given Below. Click on the name to see more information</p>
+					<input id="searchTemples" name="searchBox" type="text" class="fullWidth contact" />
+					<!--<div id="searchResults"></div>-->
+					<?php } else { include 'temples/templeProfile.php'; } ?>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="clearfix"> </div>
-	<!----//End-temples---->
-	<?php include 'contact.php'; ?>
+		<div class="clearfix"> </div>
+		<!----//End-temples---->
+		<?php include 'contact.php'; ?>
 		<!----start-footer---->
 		<div class="footer">
 			<div class="container">
@@ -54,8 +74,8 @@ $title = 'Jain Muni Locator | About :: online destination for digambara jains';
 					<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
 				</div>
 				<script type="text/javascript">
-				$(document).ready(function() {
-					/*
+					$(document).ready(function() {
+						/*
 					var defaults = {
 			  			containerID: 'toTop', // fading element id
 						containerHoverID: 'toTopHover', // fading element hover id
@@ -63,11 +83,11 @@ $title = 'Jain Muni Locator | About :: online destination for digambara jains';
 						easingType: 'linear' 
 			 		};
 					*/
-					
-					$().UItoTop({ easingType: 'easeOutQuart' });
-					
-				});
-			</script>
+						
+						$().UItoTop({ easingType: 'easeOutQuart' });
+						
+					});
+				</script>
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 			</div>
 		</div>
