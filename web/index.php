@@ -21,17 +21,16 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 					<ul class="top-nav">
 						<li class="active"><a href="#home" class="scroll">Home</a></li>
 						<li class="page-scroll"><a href="#fea" class="scroll">Features</a></li>
-						<li class="page-scroll"><a href="#port" class="scroll">Portfolio</a></li>
-						<li class="page-scroll"><a href="#blog" class="scroll">Blog</a></li>
-						<li class="page-scroll"><a href="#test" class="scroll">Testimonials</a></li>
+						<li class="page-scroll"><a href="#work" class="scroll">Contribute</a></li>
+						<li class="page-scroll"><a href="#portfolio" class="scroll">Good Reads</a></li>
 						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
 					</ul>
 					<a href="#" id="pull"><img src="web/images/nav-icon.png" title="menu" /></a>
 				</nav>
 				<div class="clearfix"> </div>
 				<div class="slide-text text-center">
-					<h1>High Quality Template</h1>
-					<span>Built with love.</span>
+					<h1>Jain Muni Locator</h1>
+					<span>Online Destination for Digambara Jains</span>
 					<a class="slide-btn" href="#">Learn More</a>
 				</div>
 				<!----//End-top-nav---->
