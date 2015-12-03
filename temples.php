@@ -8,6 +8,9 @@ if(isset($_GET['id'])) {
 	if($t->rowCount() == 1) {
 		$row = $t->fetch(PDO::FETCH_ASSOC);
 		$titlename = $row['tname'];
+		$type = $row['tcat'];
+		$tyear = $row['tyear'];
+		$tcreator = $row['tcreator'];
 	} else {
 		$titlename = 'Digambara Jain Temples';
 	}
@@ -39,6 +42,8 @@ $title = $titlename.' | Jain Muni Locator';
 						<li class="page-scroll"><a href="#more" class="scroll">More</a></li>
 						<?php } else { ?>
 						<li class="active"><a href="#temple" class="scroll">Temple</a></li>
+						<li class=""><a href="#" class="scroll">Edit</a></li>
+						<li class=""><a href="/subdomains/jainmuninew/temples.php" class="scroll">More</a></li>
 						<?php } ?>
 						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
 					</ul>
@@ -50,22 +55,35 @@ $title = $titlename.' | Jain Muni Locator';
 		</div>
 		<!----//End-header---->
 		<!----start-temples---->
-		<script type="text/javascript" src="temples/searchTemples.js"></script>
 		<div  id="temples" class="testmonials">
 			<div class="container">
 				<div class="head text-center">
 					<h3><span> </span> <?php echo $titlename; ?></h3>
-					<?php if ($titlename == 'Digambara Jain Temples') { ?>
-					<p>List of All Digambar Jain Temples is given Below. Click on the name to see more information</p>
-					<input id="searchTemples" name="searchBox" type="text" class="fullWidth contact" />
-					<!--<div id="searchResults"></div>-->
-					<?php } else { include 'temples/templeProfile.php'; } ?>
 				</div>
+				<?php if ($titlename == 'Digambara Jain Temples') { ?>
+				<script type="text/javascript" src="temples/searchTemples.js"></script>
+				<p>List of All Digambar Jain Temples is given Below. Click on the name to see more information</p>
+				<input id="searchTemples" name="searchBox" type="text" class="fullWidth contact" />
+				<div class="test-monial-time-line" id="searchResults">
+					<div class="test-monial-timeline-connector">
+						<span> </span>
+					</div>
+					<div class="clearfix"> </div>
+					<a class="more-testmonial-time-line" href="#"> <span>More</span></a>
+				</div>
+				<?php
+} else {
+	echo '<p>'.$row['tadd'].'</p>';
+	include 'temples/templeProfile.php';
+}
+				?>
 			</div>
 		</div>
 		<div class="clearfix"> </div>
 		<!----//End-temples---->
-		<?php include 'contact.php'; ?>
+		<?php
+include 'contact.php';
+include 'adsense.php'; ?>
 		<!----start-footer---->
 		<div class="footer">
 			<div class="container">
