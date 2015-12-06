@@ -1,9 +1,13 @@
+<?php
+include 'contact.php';
+include 'adsense.php';
+?>
 <!----start-footer---->
 <div class="footer">
 	<div class="container">
 		<div class="footer-left">
 			<a href="#"><img src="images/footer-logo.png" title="Jain Muni Locator" /></a>
-			<!--<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>-->
+			<p>Copyright © 2012-2015 Jain Muni Locator, All rights reserved | Developed by <a href="http://smilyo.com">Smilyo</a></p>
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -15,12 +19,12 @@
 						easingType: 'linear' 
 			 		};
 					*/
-						
-						$().UItoTop({ easingType: 'easeOutQuart' });
-						
-					});
-				</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			</div>
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
 </div>
 <!----//End-footer---->
