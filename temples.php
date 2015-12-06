@@ -83,7 +83,8 @@ $title = $titlename.' | Jain Muni Locator';
 		<!----//End-temples---->
 		<?php
 include 'contact.php';
-include 'adsense.php'; ?>
+include 'adsense.php';
+		?>
 		<!----start-footer---->
 		<div class="footer">
 			<div class="container">
