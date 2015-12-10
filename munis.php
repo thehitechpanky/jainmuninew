@@ -1,7 +1,7 @@
 <?php
-//Define variables for head.php
 include 'config.php';
 include 'munis/getMuni.php';
+//Define variables for head.php
 if(isset($_GET['id'])) {
 	$id = (int)$_GET['id'];
 	$t = $db->prepare("SELECT * FROM munishri WHERE id = '$id'");
@@ -9,7 +9,7 @@ if(isset($_GET['id'])) {
 	if($t->rowCount() == 1) {
 		$row = $t->fetch(PDO::FETCH_ASSOC);
 		$name = $row['id'];
-		$titlename = $name
+		$titlename = $name;
 	} else {
 		$titlename = 'Digambara Jain Saints';
 	}
@@ -53,22 +53,21 @@ $title = $titlename.' | Jain Muni Locator';
 			</div>
 		</div>
 		<!----//End-header---->
-		<!----start-temples---->
-		<div  id="temples" class="testmonials">
+		<!----start-munis---->
+		<div id="saints" class="testmonials">
 			<div class="container">
 				<div class="head text-center">
 					<h3><span> </span> <?php echo $titlename; ?></h3>
 				</div>
 				<?php if ($titlename == 'Digambara Jain Saints') { ?>
-				<script type="text/javascript" src="temples/searchMunis.js"></script>
-				<p>List of All Digambar Jain Saints is given Below. Click on the name to see more information</p>
-				<input id="searchTemples" name="searchBox" type="text" class="fullWidth contact" />
+				<script type="text/javascript" src="munis/searchMunis.js"></script>
+				<center>List of All Digambar Jain Saints is given Below. Click on the name to see more information</center>
+				<input id="searchMunis" type="search" placeholder="Search..." />
 				<div class="test-monial-time-line" id="searchResults">
 					<div class="test-monial-timeline-connector">
 						<span> </span>
 					</div>
 					<div class="clearfix"> </div>
-					<a class="more-testmonial-time-line" href="#"> <span>More</span></a>
 				</div>
 				<?php
 } else {
