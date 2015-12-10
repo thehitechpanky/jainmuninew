@@ -5,10 +5,10 @@ $title = 'Jain Muni Locator | About :: online destination for digambara jains';
 
 <!DOCTYPE HTML>
 <html>
-<?php include 'head.php'; ?>
-<body>
+	<?php include 'head.php'; ?>
+	<body>
 		<!----start-container---->
-			<!----start-header---->
+		<!----start-header---->
 		<div id="home" class="">
 			<div class="container">
 				<!---- start-logo---->
@@ -17,7 +17,7 @@ $title = 'Jain Muni Locator | About :: online destination for digambara jains';
 				</div>
 				<!---- //End-logo---->
 				<!----start-top-nav---->
-				 <nav class="top-nav">
+				<nav class="top-nav">
 					<ul class="top-nav">
 						<li class=""><a href="/subdomains/jainmuninew" class="">Home</a></li>
 						<li class="active"><a href="#about" class="scroll">About</a></li>
@@ -110,58 +110,32 @@ $title = 'Jain Muni Locator | About :: online destination for digambara jains';
 		<div  id="contributors" class="testmonials">
 			<div class="container">
 				<div class="head text-center">
-						<h3><span> </span> Past Contributions</h3>
+					<h3><span> </span> Past Contributions</h3>
 				</div>
-			<!----start-testmonial-time-line---->
-			<div class="test-monial-time-line">
-				<div class="col-md-6 test-monial-time-line-left">
-					<div class="test-monial-time-line-grid test-monial-time-line-grid-l1">
-						<div class="col-md-9 test-monial-time-line-left-text">
-							<p>Coding for Maps and Markers</p>
+				<!----start-testmonial-time-line---->
+				<div class="test-monial-time-line">
+					<div class="col-md-6 test-monial-time-line-left">
+						<div class="test-monial-time-line-grid test-monial-time-line-grid-l1">
+							<div class="col-md-9 test-monial-time-line-left-text">
+								<p>Coding for Maps and Markers</p>
+							</div>
+							<div class="col-md-3 test-monial-time-line-left-pic">
+								<img src="images/pic1.jpg" title="name" />
+								<a href="#">Mohd. Harris</a>
+							</div>
+							<span class="grid-point"> </span>
 						</div>
-						<div class="col-md-3 test-monial-time-line-left-pic">
-							<img src="images/pic1.jpg" title="name" />
-							<a href="#">Mohd. Harris</a>
-						</div>
-						<span class="grid-point"> </span>
 					</div>
+					<div class="test-monial-timeline-connector">
+						<span> </span>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="test-monial-timeline-connector">
-					<span> </span>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
 			</div>
 		</div>
 		<div class="clearfix"> </div>
-			<!----//End-contributors---->
-	<?php include 'contact.php'; ?>
-		<!----start-footer---->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-left">
-					<a href="#"><img src="images/footer-logo.png" title="mabur" /></a>
-					<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
-				</div>
-				<script type="text/javascript">
-				$(document).ready(function() {
-					/*
-					var defaults = {
-			  			containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear' 
-			 		};
-					*/
-					
-					$().UItoTop({ easingType: 'easeOutQuart' });
-					
-				});
-			</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			</div>
-		</div>
-		<!----//End-footer---->
+		<!----//End-contributors---->
+		<?php include 'foot.php'; ?>
 		<!----//End-container---->
 	</body>
 </html>
