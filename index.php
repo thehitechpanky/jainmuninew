@@ -46,7 +46,7 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 				<!---- start-features-grids---->
 				<div class="features-grids text-center">
 					<div class="col-md-3 features-grid">
-						<span class="fea-icon1"><i class="fa fa-users"> </i> </span>
+						<span class="fea-icon1"><i class="fa fa-male"> </i> </span>
 						<h3><a href="munis.php">Saints and Nuns</a></h3>
 						<p>Check biographies of Digambara Saints and Nuns.</p>
 					</div>
