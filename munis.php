@@ -78,7 +78,42 @@ $title = $titlename.' | Jain Muni Locator';
 			</div>
 		</div>
 		<div class="clearfix"> </div>
-		<!----//End-temples---->
+		<!----//End-saints---->
+				<!----start-more----->
+		<div id="more" class="features">
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span> More</h3>
+					<p>What else would you like to check out today?</p>
+				</div>
+				<!---- start-more-grids---->
+				<div class="features-grids text-center">
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-star"> </i> </span>
+						<h3><a href="tirthankara.php">Tirthankara</a></h3>
+						<p>Check biographies of Tirthankara.</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-thumbs-up"> </i> </span>
+						<h3><a href="temples.php">Temples</a></h3>
+						<p>See profiles of Digmabara temples.</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-tachometer"> </i> </span>
+						<h3><a href="idols.php">Idols</a></h3>
+						<p>Check out the details of Digambara Jain Idols.</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-mobile"> </i> </span>
+						<h3><a href="map.php">Map</a></h3>
+						<p>Locate Jain Saints and Nuns on a single map.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<!---- //End-more-grids---->
+			</div>
+		</div>
+		<!----//End-more----->
 		<?php include 'foot.php'; ?>
 		<!----//End-container---->
 	</body>
