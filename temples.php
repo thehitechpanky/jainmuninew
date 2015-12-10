@@ -30,7 +30,7 @@ $title = $titlename.' | Jain Muni Locator';
 			<div class="container">
 				<!---- start-logo---->
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" title="Mabur" /></a>
+					<a href="index.html"><img src="images/logo.png" title="Jain Muni Locator" /></a>
 				</div>
 				<!---- //End-logo---->
 				<!----start-top-nav---->
@@ -81,36 +81,7 @@ $title = $titlename.' | Jain Muni Locator';
 		</div>
 		<div class="clearfix"> </div>
 		<!----//End-temples---->
-		<?php
-include 'contact.php';
-include 'adsense.php';
-		?>
-		<!----start-footer---->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-left">
-					<a href="#"><img src="images/footer-logo.png" title="mabur" /></a>
-					<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
-				</div>
-				<script type="text/javascript">
-					$(document).ready(function() {
-						/*
-					var defaults = {
-			  			containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear' 
-			 		};
-					*/
-						
-						$().UItoTop({ easingType: 'easeOutQuart' });
-						
-					});
-				</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			</div>
-		</div>
-		<!----//End-footer---->
+		<?php include 'foot.php'; ?>
 		<!----//End-container---->
 	</body>
 </html>
