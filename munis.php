@@ -42,7 +42,7 @@ $title = $titlename.' | Jain Muni Locator';
 						<?php } else { ?>
 						<li class="active"><a href="#saint" class="scroll">Saint</a></li>
 						<li class=""><a href="#" class="scroll">Edit</a></li>
-						<li class=""><a href="/subdomains/jainmuninew/munis.php" class="scroll">More</a></li>
+						<li class=""><a href="/subdomains/jainmuninew/munis.php" class="">More</a></li>
 						<?php } ?>
 						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
 					</ul>
@@ -78,7 +78,7 @@ $title = $titlename.' | Jain Muni Locator';
 		</div>
 		<div class="clearfix"> </div>
 		<!----//End-saints---->
-				<!----start-more----->
+		<!----start-more----->
 		<div id="more" class="features">
 			<div class="container">
 				<div class="head text-center">
