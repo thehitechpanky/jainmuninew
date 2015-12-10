@@ -41,7 +41,7 @@ $title = $titlename.' | Jain Muni Locator';
 						<li class="active"><a href="#saints" class="scroll">Saints</a></li>
 						<li class="page-scroll"><a href="#more" class="scroll">More</a></li>
 						<?php } else { ?>
-						<li class="active"><a href="#saint" class="scroll">Saint</a></li>
+						<li class="active"><a href="#muni" class="scroll">Saint</a></li>
 						<li class=""><a href="#" class="scroll">Edit</a></li>
 						<li class=""><a href="/subdomains/jainmuninew/munis.php" class="">More</a></li>
 						<?php } ?>
