@@ -61,8 +61,8 @@ $title = $titlename.' | Jain Muni Locator';
 				</div>
 				<?php if ($titlename == 'Digambara Jain Saints') { ?>
 				<script type="text/javascript" src="munis/searchMunis.js"></script>
-				<center>List of All Digambar Jain Saints is given Below. Click on the name to see more information</center>
-				<input id="searchMunis" type="search" placeholder="Search..." />
+				<p><center>List of All Digambar Jain Saints is given Below. Click on the name to see more information</center></p>
+				<center><input id="searchMunis" type="search" placeholder="Search..." /></center>
 				<div class="test-monial-time-line" id="searchResults">
 					<div class="test-monial-timeline-connector">
 						<span> </span>
