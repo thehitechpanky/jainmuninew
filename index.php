@@ -61,7 +61,7 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 						<p>Check out the timeline to Jainism.</p>
 					</div>
 					<div class="col-md-3 features-grid">
-						<span class="fea-icon1"><i class="fa fa-map-globe"> </i> </span>
+						<span class="fea-icon1"><i class="fa fa-globe"> </i> </span>
 						<h3><a href="map.php">Map</a></h3>
 						<p>Locate Jain Saints and Nuns on a single map.</p>
 					</div>
