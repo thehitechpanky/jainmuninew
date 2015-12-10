@@ -4,7 +4,8 @@ include 'munis/getMuni.php';
 //Define variables for head.php
 if(isset($_GET['id'])) {
 	$id = (int)$_GET['id'];
-	$t = $db->prepare("SELECT * FROM munishri WHERE id = '$id'");
+	$t = $db->prepare('SELECT * FROM munishri, upadhis, kshullika, aryika, bhramcharya, kshullak, ailak, muni, upadhyay, ailacharya, acharya, muni_location, history, contact
+						WHERE id = '.$id.' AND approved=1 AND uid=upadhi AND id=kshullikaid AND id=aryikaid AND id=bhramcharyaid AND id=kid AND id=ailakid AND id=muniid AND id=upadhyayid AND id=ailacharyaid AND id=acharyaid AND id=mid AND id=historyid AND id=contactid');
 	$t->execute();
 	if($t->rowCount() == 1) {
 		$row = $t->fetch(PDO::FETCH_ASSOC);
