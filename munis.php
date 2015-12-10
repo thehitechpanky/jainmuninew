@@ -8,7 +8,7 @@ if(isset($_GET['id'])) {
 	$t->execute();
 	if($t->rowCount() == 1) {
 		$row = $t->fetch(PDO::FETCH_ASSOC);
-		$name = $row['id'];
+		$name = getmuni($row['id']);
 		$titlename = $name;
 	} else {
 		$titlename = 'Digambara Jain Saints';
@@ -71,7 +71,6 @@ $title = $titlename.' | Jain Muni Locator';
 				</div>
 				<?php
 } else {
-	echo '<p>'.$name.'</p>';
 	include 'munis/muniProfile.php';
 }
 				?>
