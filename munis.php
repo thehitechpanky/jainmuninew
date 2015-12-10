@@ -1,13 +1,14 @@
 <?php
 //Define variables for head.php
 include 'config.php';
+include 'munis/getMuni.php';
 if(isset($_GET['id'])) {
 	$id = (int)$_GET['id'];
 	$t = $db->prepare("SELECT * FROM munishri WHERE id = '$id'");
 	$t->execute();
 	if($t->rowCount() == 1) {
 		$row = $t->fetch(PDO::FETCH_ASSOC);
-		$name = getmuni($row['id']);
+		$name = $row['id'];
 		$titlename = $name
 	} else {
 		$titlename = 'Digambara Jain Saints';
@@ -79,36 +80,7 @@ $title = $titlename.' | Jain Muni Locator';
 		</div>
 		<div class="clearfix"> </div>
 		<!----//End-temples---->
-		<?php
-include 'contact.php';
-include 'adsense.php';
-		?>
-		<!----start-footer---->
-		<div class="footer">
-			<div class="container">
-				<div class="footer-left">
-					<a href="#"><img src="images/footer-logo.png" title="Jain Muni Locator" /></a>
-					<!--<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>-->
-				</div>
-				<script type="text/javascript">
-					$(document).ready(function() {
-						/*
-					var defaults = {
-			  			containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear' 
-			 		};
-					*/
-						
-						$().UItoTop({ easingType: 'easeOutQuart' });
-						
-					});
-				</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-			</div>
-		</div>
-		<!----//End-footer---->
+		<?php include 'foot.php'; ?>
 		<!----//End-container---->
 	</body>
 </html>
