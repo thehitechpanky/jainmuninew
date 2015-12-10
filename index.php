@@ -46,22 +46,22 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 				<!---- start-features-grids---->
 				<div class="features-grids text-center">
 					<div class="col-md-3 features-grid">
-						<span class="fea-icon1"><i class="fa fa-star"> </i> </span>
+						<span class="fea-icon1"><i class="fa fa-users"> </i> </span>
 						<h3><a href="munis.php">Saints and Nuns</a></h3>
 						<p>Check biographies of Digambara Saints and Nuns.</p>
 					</div>
 					<div class="col-md-3 features-grid">
-						<span class="fea-icon1"><i class="fa fa-thumbs-up"> </i> </span>
+						<span class="fea-icon1"><i class="fa fa-heart"> </i> </span>
 						<h3><a href="#">Support</a></h3>
 						<p>Donate and become a contributor to this awesome website.</p>
 					</div>
 					<div class="col-md-3 features-grid">
-						<span class="fea-icon1"><i class="fa fa-tachometer"> </i> </span>
+						<span class="fea-icon1"><i class="fa fa-clock-o"> </i> </span>
 						<h3><a href="#">Timeline</a></h3>
 						<p>Check out the timeline to Jainism.</p>
 					</div>
 					<div class="col-md-3 features-grid">
-						<span class="fea-icon1"><i class="fa fa-mobile"> </i> </span>
+						<span class="fea-icon1"><i class="fa fa-map-globe"> </i> </span>
 						<h3><a href="map.php">Map</a></h3>
 						<p>Locate Jain Saints and Nuns on a single map.</p>
 					</div>
