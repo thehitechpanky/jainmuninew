@@ -10,7 +10,9 @@ function initMap() {
 	var locations = $("#array").val();
 	locations = JSON.parse(locations);
 	//alert(locations);
-	var marker, i;
+	var marker, i, content;
+	var infowindow = new google.maps.InfoWindow();
+	var img = new Image();
 	for (i = 0; i < locations.length; i++) {
 		//Markers
 		marker = new google.maps.Marker({
@@ -18,5 +20,15 @@ function initMap() {
 			map: map,
 			//title: 'Jai Jinendra!'
 		});
+		//Infowindow
+		google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			return function() {
+				content = '<a href="munis.php?id=' + locations[i]['id'] + '"><center><img width="200px" src="' + locations[i]['img'];
+				content += '" /><br />' + locations[i]['title'] + locations[i]['name'] + locations[i]['alias'] + '<br />';
+				content += locations[i]['location'] + '</center></a>';
+				infowindow.setContent(content);
+				infowindow.open(map, marker);
+			}
+		})(marker, i));
 	}
 }
