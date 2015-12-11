@@ -15,7 +15,7 @@
 include 'config.php';
 include 'munis/getMuni.php';
 //Markers from SQL
-$q = $db->prepare("SELECT * FROM muni_location, munishri WHERE mid=id AND lat<>0 AND dos='0000-00-00' ORDER BY upadhi DESC");
+$q = $db->prepare("SELECT * FROM muni_location, munishri, upadhis WHERE mid=id AND upadhi=uid AND lat<>0 AND dos='0000-00-00' ORDER BY upadhi DESC");
 $q->execute();
 $i = 0;
 if($q->rowCount() > 0) {
