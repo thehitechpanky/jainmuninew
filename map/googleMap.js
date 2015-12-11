@@ -8,12 +8,13 @@ function initMap() {
 	
 	//Marker and their infowindow Code Starts for locating munis
 	var locations = $("#array").val();
+	locations = JSON.parse(locations);
 	//alert(locations);
 	var marker, i;
 	for (i = 0; i < locations.length; i++) {
 		//Markers
 		marker = new google.maps.Marker({
-			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+			position: new google.maps.LatLng(locations[i]['lat'], locations[i]['lng']),
 			map: map,
 			//title: 'Jai Jinendra!'
 		});
