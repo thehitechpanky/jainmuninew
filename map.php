@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Locate Digambara Muni | Jain Muni Locator</title>
-		<meta name="viewport" content="initial-scale=1.0">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="map/googleMap.css">
 		<script type='text/javascript' src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
@@ -10,6 +10,7 @@
 	</head>
 	
 	<body>
+		<input id="pac-input" class="controls" type="text" placeholder="Search Box" />
 		<div id="map"></div>
 		<?php
 include 'config.php';
@@ -25,7 +26,7 @@ if($q->rowCount() > 0) {
 	}
 }
 		?>
-		<textarea id=array>
+		<textarea id=array class="mapinput">
 			<?php echo json_encode($rows); ?>
 		</textarea>
 		<?php include 'map/googleMap.php'; ?>
