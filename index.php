@@ -11,22 +11,13 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 		<!--start-header-->
 		<div id="home" class="header scroll">
 			<div class="container">
-				<!--start-logo-->
-				<div class="logo">
-					<a href="index.php"><img src="images/logo.png" alt="Jain Muni Locator" title="Jain Muni Locator" /></a>
-				</div>
-				<!--End-logo-->
-				<!--start-top-nav-->
-				<nav class="top-nav">
-					<ul class="top-nav">
-						<li class="active"><a href="#home" class="scroll">Home</a></li>
-						<li class="page-scroll"><a href="#fea" class="scroll">Explore</a></li>
-						<li class="page-scroll"><a href="#reads" class="scroll">Good Reads</a></li>
-						<li class="contatct-active page-scroll"><a href="#contact" class="scroll">Contact</a></li>
-					</ul>
-					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-				</nav>
-				<div class="clearfix"> </div>
+				<?php
+$navlinks = '<li class="active"><a href="#home" class="scroll">Home</a></li>
+			<li class="page-scroll"><a href="#fea" class="scroll">Explore</a></li>
+			<li class="page-scroll"><a href="#reads" class="scroll">Good Reads</a></li>
+			<li class="contatct-active page-scroll"><a href="#contact" class="scroll">Contact</a></li>';				
+include 'nav.php';
+				?>
 				<div class="slide-text text-center">
 					<h1>Jain Muni Locator</h1>
 					<span>Online Destination for Digambara Jains</span>
