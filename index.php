@@ -32,18 +32,18 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 					<span>Online Destination for Digambara Jains</span>
 					<a class="slide-btn" href="about.php">Learn More</a>
 				</div>
-				<!----//End-top-nav---->
+				<!--//End-top-nav-->
 			</div>
 		</div>
-		<!----//End-header---->
-		<!----start-feartures----->
+		<!--//End-header-->
+		<!--start-feartures-->
 		<div id="fea" class="features">
 			<div class="container">
 				<div class="head text-center">
 					<h3><span> </span> Explore</h3>
 					<p>What would you like to do today?</p>
 				</div>
-				<!---- start-features-grids---->
+				<!--start-features-grids-->
 				<div class="features-grids text-center">
 					<div class="col-md-3 features-grid">
 						<span class="fea-icon1"><i class="fa fa-male"> </i> </span>
@@ -67,19 +67,19 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<!---- //End-features-grids---->
+				<!--//End-features-grids-->
 			</div>
 		</div>
-		<!----//End-feartures----->
-		<!----start-reads----->
+		<!--//End-feartures-->
+		<!--start-reads-->
 		<div id="reads" class="portfolio portfolio-box">
 			<div class="head text-center">
 				<h3><span> </span> Good Reads</h3>
 				<p>We have searched the vast literature of Jainism to bring some interesting reads for you.</p>
 			</div>
-			<!----start-portfolio---->
+			<!--start-portfolio-->
 			<div id="port" class="portfolio-main">
-				<!---- start-portfolio-script----->
+				<!--start-portfolio-script-->
 				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 				<script type="text/javascript">
 					$(function () {
@@ -118,7 +118,7 @@ $title = 'Jain Muni Locator | Home :: online destination for digambara jains';
 						filterList.init();
 					});	
 				</script>
-				<!----//End-portfolio-script----->
+				<!--//End-portfolio-script-->
 				<ul id="filters" class="clearfix">
 					<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
 					<li><span class="filter" data-filter="card">Opinions</span></li>
