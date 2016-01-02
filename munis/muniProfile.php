@@ -1,12 +1,15 @@
 <?php
 $dos = $row['dos'];
+$upadhi = $row['upadhi'];
+$ailacharyaguru = $row['ailacharyaguru'];
+$upadhyayguru = $row['upadhyayguru'];
 ?>
-<!----start-temple-profile---->
-<div id="temple" class="blog">
-	<!---- start-blog-time-line---->
+<!--start-muni-profile-->
+<div id="muni" class="blog">
+	<!--start-blog-time-line-->
 	<div class="blog-time-line">
 		<div class="col-md-6 blog-time-line-left"><br /><br />
-			<img src="<?php echo $row['img']; ?>" width="60%" />
+			<img src="<?php echo $row['img']; ?>" alt="<?php echo $title; ?>" width="60%" />
 		</div>
 		<div class="col-md-6 blog-time-line-right">
 			<?php if($row['location'] == "N/A" or $dos <> "0000-00-00") {} else { ?>
@@ -43,14 +46,91 @@ $dos = $row['dos'];
 				<div class="clearfix"> </div>
 			</div>
 			<div class="clearfix"> </div>
-			<?php } if($tcreator == "") {} else { ?>
+			<?php } if($dos == "0000-00-00") {} else { ?>
 			<div class="blog-post">
 				<div class="col-md-2 blog-post-date">
-					<span><label>Built by</label></span>
+					<span><label>Death</label></span>
 				</div>
 				<div class="col-md-10 blog-post-info">
 					<!--<span class="categorie">Category : <a href="#">Traveling</a></span>--><br />
-					<h4 class="post-head"><a href="#"> <?php echo $tcreator; ?> </a></h4><br /><br />
+					<h4 class="post-head"><a href="#"> <?php echo $dos; ?> </a></h4><br /><br />
+					<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet </p>-->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<?php } ?>
+			<div class="blog-post">
+				<div class="col-md-2 blog-post-date">
+					<span><label>Books</label></span>
+				</div>
+				<div class="col-md-10 blog-post-info">
+					<!--<span class="categorie">Category : <a href="#">Traveling</a></span>--><br />
+					<h4 class="post-head"><a href="#"> Coming Soon... </a></h4><br /><br />
+					<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet </p>-->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="blog-post">
+				<div class="col-md-2 blog-post-date">
+					<span><label>Chaturmas</label></span>
+				</div>
+				<div class="col-md-10 blog-post-info">
+					<!--<span class="categorie">Category : <a href="#">Traveling</a></span>--><br />
+					<h4 class="post-head"><a href="#"> Coming Soon... </a></h4><br /><br />
+					<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet </p>-->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<?php if($upadhi == 1) { ?>
+			<div class="blog-post">
+				<div class="col-md-2 blog-post-date">
+					<span><label>Acharya</label></span>
+				</div>
+				<div class="col-md-10 blog-post-info">
+					<!--<span class="categorie">Category : <a href="#">Traveling</a></span>--><br />
+					<h4 class="post-head"><a href="#">  Pad Details </a></h4><br /><br />
+					<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet </p>-->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<?php } if($ailacharyaguru > 0) { ?>
+			<div class="blog-post">
+				<div class="col-md-2 blog-post-date">
+					<span><label>Elacharya</label></span>
+				</div>
+				<div class="col-md-10 blog-post-info">
+					<!--<span class="categorie">Category : <a href="#">Traveling</a></span>--><br />
+					<h4 class="post-head"><a href="#"> Pad Details </a></h4><br /><br />
+					<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet </p>-->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<?php } if($upadhyayguru > 0) { ?>
+			<div class="blog-post">
+				<div class="col-md-2 blog-post-date">
+					<span><label>Upadhyay</label></span>
+				</div>
+				<div class="col-md-10 blog-post-info">
+					<!--<span class="categorie">Category : <a href="#">Traveling</a></span>--><br />
+					<h4 class="post-head"><a href="#"> Pad Details </a></h4><br /><br />
+					<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet </p>-->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<?php } if($upadhi < 5) { ?>
+			<div class="blog-post">
+				<div class="col-md-2 blog-post-date">
+					<span><label>Muni</label></span>
+				</div>
+				<div class="col-md-10 blog-post-info">
+					<!--<span class="categorie">Category : <a href="#">Traveling</a></span>--><br />
+					<h4 class="post-head"><a href="#"> Deeksha Details </a></h4><br /><br />
 					<!--<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet </p>-->
 				</div>
 				<div class="clearfix"> </div>
@@ -60,12 +140,9 @@ $dos = $row['dos'];
 			<div class="blog-post-time-line-connector">
 				<span> </span>
 			</div>
-			<!--<div class="more-blog-post-time-line-connector">
-<a href="#"><span>More</span></a>
-</div>-->
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-	<!---- //End-blog-time-line---->
+	<!--//End-blog-time-line-->
 </div>
-<!----//End-temple-profile---->
+<!--//End-muni-profile-->
