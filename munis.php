@@ -24,37 +24,27 @@ $title = $titlename.' | Jain Muni Locator';
 <html>
 	<?php include 'head.php'; ?>
 	<body>
-		<!----start-container---->
-		<!----start-header---->
+		<!--start-container-->
+		<!--start-header-->
 		<div id="home" class="">
 			<div class="container">
-				<!---- start-logo---->
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" title="Jain Muni Locator" /></a>
-				</div>
-				<!---- //End-logo---->
-				<!----start-top-nav---->
-				<nav class="top-nav">
-					<ul class="top-nav">
-						<li class=""><a href="/subdomains/jainmuninew" class="">Home</a></li>
-						<?php if ($titlename == 'Digambara Jain Saints') { ?>
-						<li class="active"><a href="#saints" class="scroll">Saints</a></li>
-						<li class="page-scroll"><a href="#more" class="scroll">More</a></li>
-						<?php } else { ?>
-						<li class="active"><a href="#muni" class="scroll">Saint</a></li>
+				<?php
+$navlinks = '<li class=""><a href="/subdomains/jainmuninew" class="">Home</a></li>';
+if ($titlename == 'Digambara Jain Saints') {
+	$navlinks = $navlinks.'<li class="active"><a href="#saints" class="scroll">Saints</a></li>
+						<li class="page-scroll"><a href="#more" class="scroll">More</a></li>';
+} else {
+	$navlinks = $navlinks.'<li class="active"><a href="#muni" class="scroll">Saint</a></li>
 						<li class=""><a href="#" class="scroll">Edit</a></li>
-						<li class=""><a href="/subdomains/jainmuninew/munis.php" class="">More</a></li>
-						<?php } ?>
-						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
-					</ul>
-					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-				</nav>
-				<div class="clearfix"> </div>
-				<!----//End-top-nav---->
+						<li class=""><a href="/subdomains/jainmuninew/munis.php" class="">More</a></li>';
+}
+$navlinks = $navlinks.'<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>';
+include 'nav.php';
+				?>
 			</div>
 		</div>
-		<!----//End-header---->
-		<!----start-munis---->
+		<!--//End-header-->
+		<!--start-munis-->
 		<div id="saints" class="testmonials">
 			<div class="container">
 				<div class="head text-center">
@@ -71,22 +61,22 @@ $title = $titlename.' | Jain Muni Locator';
 					<div class="clearfix"> </div>
 				</div>
 				<?php
-} else {
-	include 'munis/muniProfile.php';
-}
+				} else {
+					include 'munis/muniProfile.php';
+				}
 				?>
 			</div>
 		</div>
 		<div class="clearfix"> </div>
-		<!----//End-saints---->
-		<!----start-more----->
+		<!--//End-saints-->
+		<!--start-more-->
 		<div id="more" class="features">
 			<div class="container">
 				<div class="head text-center">
 					<h3><span> </span> More</h3>
 					<p>What else would you like to check out today?</p>
 				</div>
-				<!---- start-more-grids---->
+				<!--start-more-grids-->
 				<div class="features-grids text-center">
 					<div class="col-md-3 features-grid">
 						<span class="fea-icon1"><i class="fa fa-street-view"> </i> </span>
@@ -110,11 +100,11 @@ $title = $titlename.' | Jain Muni Locator';
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<!---- //End-more-grids---->
+				<!--//End-more-grids-->
 			</div>
 		</div>
-		<!----//End-more----->
+		<!--//End-more-->
 		<?php include 'foot.php'; ?>
-		<!----//End-container---->
+		<!--//End-container-->
 	</body>
 </html>
