@@ -38,7 +38,7 @@ if ($titlename == 'Digambara Jain Saints') {
 						<li class=""><a href="#" class="scroll">Edit</a></li>
 						<li class=""><a href="/subdomains/jainmuninew/munis.php" class="">More</a></li>';
 }
-$navlinks = $navlinks.'<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>';
+$navlinks = $navlinks.'<li class="contatct-active page-scroll"><a href="#contact" class="scroll">Contact</a></li>';
 include 'nav.php';
 				?>
 			</div>
