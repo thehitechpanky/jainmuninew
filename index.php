@@ -125,7 +125,7 @@ include 'nav.php';
 								</div>
 								<div class="port-grid-pic block last">
 									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-										<img src="images/p1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
+										<img src="images/p1.jpg" alt="Allegories" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
 										</div></a>
 								</div>
 								<div class="clearfix"> </div>
@@ -141,7 +141,7 @@ include 'nav.php';
 								</div>
 								<div class="port-grid-pic block last">
 									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-										<img src="images/p2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
+										<img src="images/p2.jpg" alt="34 Extra Virtues" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
 										</div></a>
 								</div>
 								<div class="clearfix"> </div>
@@ -157,7 +157,7 @@ include 'nav.php';
 								</div>
 								<div class="port-grid-pic block last">
 									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-										<img src="images/p3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
+										<img src="images/p3.jpg" alt="11 Conduct Stages" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
 										</div></a>
 								</div>
 								<div class="clearfix"> </div>
@@ -185,7 +185,7 @@ include 'nav.php';
 							<div class="port-grid">
 								<div class="port-grid-pic block last">
 									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-										<img src="images/p5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
+										<img src="images/p5.jpg" alt="10 Noble Virtues" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
 										</div></a>
 								</div>
 								<div class="port-grid-text port-grid-text-c">
@@ -201,7 +201,7 @@ include 'nav.php';
 							<div class="port-grid">
 								<div class="port-grid-pic block last">
 									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-										<img src="images/p6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
+										<img src="images/p6.jpg" alt="12 Ideas" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
 										</div></a>
 								</div>
 								<div class="port-grid-text port-grid-text-c">
