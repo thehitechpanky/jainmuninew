@@ -1,6 +1,11 @@
-/* div stylings */
+/* div styling */
 .center {
 	text-align: center;	
+}
+
+/* image styling */
+img.profile {
+	width: 60%;
 }
 
 /* Search Box */
