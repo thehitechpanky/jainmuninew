@@ -169,7 +169,7 @@ include 'nav.php';
 							<div class="port-grid">
 								<div class="port-grid-pic block last">
 									<a href="#" class="b-link-stripe b-animate-go  thickbox">
-										<img src="images/p4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
+										<img src="images/p4.jpg" alt="11 Conduct Stages" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/plus.png" alt=""/></h2>
 										</div></a>
 								</div>
 								<div class="port-grid-text port-grid-text-c">
