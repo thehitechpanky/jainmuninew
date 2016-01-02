@@ -9,7 +9,7 @@ $upadhyayguru = $row['upadhyayguru'];
 	<!--start-blog-time-line-->
 	<div class="blog-time-line">
 		<div class="col-md-6 blog-time-line-left"><br /><br />
-			<img src="<?php echo $row['img']; ?>" alt="<?php echo $title; ?>" width="60%" />
+			<img src="<?php echo $row['img']; ?>" alt="<?php echo $title; ?>" class="profile" />
 		</div>
 		<div class="col-md-6 blog-time-line-right">
 			<?php if($row['location'] == "N/A" or $dos <> "0000-00-00") {} else { ?>
