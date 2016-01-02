@@ -18,7 +18,7 @@
 			<form>
 				<input type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
 				<input type="text" value="info@mail.com *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email@domain.com *';}">
-				<textarea onfocus="if(this.value == 'Message *') {this.value='';}" onblur="if(this.value == '') {this.value='Message *;}">Message *</textarea>
+				<textarea onfocus="if(this.value == 'Message *') {this.value='';}" onblur="if(this.value == '') {this.value='Message *';}">Message *</textarea>
 				<p class="conditions"> <label><span>*</span>Fields in * are mandatory.</label></p>
 				<span class="submit-btn"><input type="submit" value="Send"></span>
 			</form>
