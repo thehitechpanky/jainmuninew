@@ -1,11 +1,12 @@
 <head>
 	<title><?php echo $title; ?></title>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<meta charset="UTF-8">
+	<link href="css/minCSS.php" rel="stylesheet" type="text/css" media="screen" />
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<!--<script src="js/jquery.min.js"></script>-->
-	<!---- start-smoth-scrolling---->
+	<!--start-smoth-scrolling-->
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
@@ -16,20 +17,18 @@
 			});
 		});
 	</script>
-	<!---- start-smoth-scrolling---->
-	<!-- Custom Theme files -->
-	<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+	<!--start-smoth-scrolling-->
 	<!-- Custom Theme files -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!----font-Awesome----->
-	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-	<!----font-Awesome----->
-	<!----webfonts---->
+	<!--font-Awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--font-Awesome-->
+	<!--webfonts-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-	<!----//webfonts---->
-	<!----start-top-nav-script---->
+	<!--//webfonts-->
+	<!--start-top-nav-script-->
 	<script>
 		$(function() {
 			var pull 		= $('#pull');
@@ -47,5 +46,5 @@
 			});
 		});
 	</script>
-	<!----//End-top-nav-script---->
+	<!--//End-top-nav-script-->
 </head>
