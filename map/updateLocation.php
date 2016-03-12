@@ -5,8 +5,8 @@ include '../functions.php';
 $email = $_GET['email'];
 $username = $_GET['username'];
 $userimg = $_GET['userimg'];
-$userlat = 33.6667;
-$userlng = 73.1667;
+$userlat = $_GET['userlat'];
+$userlng = $_GET['userlng'];
 $userlocation = getaddress($userlat,$userlng);
 
 // fileds of editlog
