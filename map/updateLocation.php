@@ -15,7 +15,7 @@ $u = $db->prepare("SELECT * FROM user WHERE email=?");
 $u->execute(array($email));
 
 if($u->rowCount() == 1) {
-	$q = $db->prepare("UPDATE user SET username=?, usertimestamp=?, userip WHERE email=?");
+	$q = $db->prepare("UPDATE user SET username=?, usertimestamp=?, userip=? WHERE email=?");
 	$q->execute(array($username,$usertimestamp,$userip,$email));
 } else {
 	$q = $db->prepare("INSERT INTO user (email,username,userlat,userlng,userlocation,usertimestamp,userip) VALUES (?,?,?,?,?,?,?)");
