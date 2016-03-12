@@ -1,7 +1,7 @@
-//navigator.geolocation.getCurrentPosition(function(position) {
-//	var userlat = position.coords.latitude;
-//	var userlng = position.coords.longitude;
-//});				
+navigator.geolocation.getCurrentPosition(function(position) {
+	userlat = position.coords.latitude;
+	userlng = position.coords.longitude;
+});				
 function onSignIn(googleUser) {
 	// Useful data for your client-side scripts:
 	var profile = googleUser.getBasicProfile();
@@ -13,7 +13,7 @@ function onSignIn(googleUser) {
 	var userimg = profile.getImageUrl();
 	if (window.XMLHttpRequest) {
 		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "map/updateLocation.php?email=" + email + "&username=" + username + "&userimg=" + userimg , true);
+		xmlhttp.open("GET", "map/updateLocation.php?email=" + email + "&username=" + username + "&userimg=" + userimg + "&userlat=" + userlat + "&userlng=" + userlng, true);
 		xmlhttp.send();
 		return false;
 		//alert("Hello");
