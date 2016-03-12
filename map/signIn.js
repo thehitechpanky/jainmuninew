@@ -16,6 +16,5 @@ function onSignIn(googleUser) {
 		xmlhttp.open("GET", "map/updateLocation.php?email=" + email + "&username=" + username + "&userimg=" + userimg + "&userlat=" + userlat + "&userlng=" + userlng, true);
 		xmlhttp.send();
 		return false;
-		//alert("Hello");
 	}
 };
