@@ -5,12 +5,13 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="map/googleMap.css">
+		<link rel="stylesheet" href="map/sliderMenu.css">
 		<script type='text/javascript' src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
 		<script type='text/javascript' src='http://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
 	</head>
 	
 	<body>
-		<input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+		<input id="pac-input" class="controls" type="text" placeholder="       Search Box" />
 		<div id="map"></div>
 		<?php
 include 'config.php';
@@ -25,10 +26,35 @@ if($q->rowCount() > 0) {
 		$rows[] = $row;
 	}
 }
+//User Markers from SQL for map
+$q = $db->prepare("SELECT * FROM user WHERE userlat<>0");
+$q->execute();
+if($q->rowCount() > 0) {
+	$rows2 = array();
+	while($row2 = $q->fetch(PDO::FETCH_ASSOC)) {
+		$rows2[] = $row2;
+	}
+}
 		?>
-		<textarea id=array class="mapinput">
+		<textarea id=munilocations class="mapinput">
 			<?php echo json_encode($rows); ?>
 		</textarea>
+		<textarea id=userlocations class="mapinput">
+			<?php echo json_encode($rows2); ?>
+		</textarea>
 		<?php include 'map/googleMap.php'; ?>
+		<!-- Start Menu -->
+		<div id="pgcontainer">
+			<a href="#" class="menubtn" title="Menu"></a>
+			<div id="menu">
+				<ul>		            
+					<li><a target="" href="./" title="Home">Home</a></li>
+					<li><a target="" href="./about.php" title="About">About</a></li>
+					<li><a target="" href="./munis.php" title="Munis">Munis</a></li>
+				</ul>
+			</div>
+			<div class="overlay"></div>
+		</div>
+		<!-- End Menu -->
 	</body>
 </html>
